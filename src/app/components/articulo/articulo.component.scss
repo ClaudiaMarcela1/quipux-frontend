@@ -1,0 +1,28 @@
+
+.info{
+    text-align: center;
+    line-height: 0.3;
+}
+.parraf{
+    padding-bottom: 40px;
+}
+
+.short-div-div{
+    height: 50%;
+}
+
+.short-div{
+    height: 50%;
+    overflow-y: scroll;
+}
+
+.vertical-scrollable>.row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
+}
+
+.vertical-scrollable> .row> .col-sm-3{
+    display: relative;
+    float: none;
+}

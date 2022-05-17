@@ -1,0 +1,26 @@
+[
+    {
+        "ubicacion":
+                    {
+                        "direccion": "Carrera 52 # 91-66",
+                        "ubicacion": "Medellín Colombia"
+                    },
+        "correoElectronico": "usuarioapellido@hotmail.com",
+        "sitioWeb": "www.usuarioapellido.com",
+        "redSocial": 
+                    {
+                        "instagram": "www.instagram.com/usuarioapellido",
+                        "linkedin": "www.linkedin.com/usuarioapellido"
+                    },
+        "correspondencia": 
+                    {
+                        "direccion":"Carrera 52 # 91-66",
+                        "ubicacion": "Envigado Colombia"
+                    },
+        "telefonos":
+                    {
+                        "fijo": "+57 (604) 313-70-00",
+                        "celular": "(312) 313-44-77"
+                    }
+    }
+]

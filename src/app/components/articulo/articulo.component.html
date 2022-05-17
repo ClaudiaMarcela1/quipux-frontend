@@ -1,0 +1,89 @@
+<div style="background-color: #E9ECEF">
+
+    <div class="container" style="padding-top: 30px;">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="background-color: white">
+                <br>
+                <p><b>INFORMACIÓN DEL CONTACTO</b></p><br>
+                <div class="info">
+                    <div class="parraf">
+                        <p><b>Dirección</b></p>
+                        <p>{{ubicacionDir}}</p>
+                        <p>{{ubicacionCity}}</p>
+                    </div>
+                    <div class="parraf">
+                        <p><b>Correo electrónico</b></p>
+                        <p>{{correoElectronico}}</p>
+                    </div>
+                    <div class="parraf">
+                        <p><b>Sitio Web</b></p>
+                        <p style="color: #00BBF9;">{{sitioWeb}}</p>
+                    </div>
+                    <div class="parraf">
+                        <p><b>Red Social</b></p>
+                        <p style="color: #00BBF9;">{{redInst}}</p>
+                        <p style="color: #00BBF9;">{{redLink}}</p>
+                    </div>
+                    <div class="parraf">
+                        <p><b>Dirección de correspondencia de correo</b></p>
+                        <p>{{correspondenciaDir}}</p>
+                        <p>{{correspondenciaCity}}</p>
+                    </div>
+                    <div class="parraf">
+                        <p><b>Números de teléfonos</b></p>
+                        <p>Fijo</p>
+                        <p>{{telefonoFijo}}</p><br><br>
+                        <p>Celular</p>
+                        <p>{{telefonoCel}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                <div class="short-div-div" style="background-color:green">
+                    CAROUSEL
+                </div>
+
+                <div class="short-div" style="background-color:white">
+
+                    <nav class="container vertical-scrollable">
+                        <div class="row text-center">
+                            
+                            <div *ngFor="let articulo of articulos" class="col-sm-3">
+                                <div class="card" style="align-items: center; border: none;">
+                                    <img src="{{articulo.imagen}}" class="rounded-circle" width="50%">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-size: 12px">{{articulo.titulo}}</h5>
+                                        <p class="card-text" style="font-size: 10px;">{{articulo.descripcion}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--
+<table>
+    <thead>
+        <tr>
+            <th scope="col">
+                TITULO
+            </th>
+            <th scope="col">
+                DESCRIPCION
+            </th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let art of articulos">
+        <tr>
+            <td scope="row">{{art.titulo}}</td>
+            <td>{{art.descripcion}}</td>
+        </tr>
+    </tbody>
+</table>
+-->
