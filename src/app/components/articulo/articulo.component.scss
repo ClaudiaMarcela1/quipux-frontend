@@ -1,14 +1,42 @@
+.container-fluid{
+    display: flex;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.contenedor_nuevo{
+    padding: 0;
+    width: 10%;
+    float: left;
+    z-index: 1;
+}
+
+.contenedor1{
+    margin-right: 2%;
+    margin-left: 0px;
+    width: 88%;
+    float: right;
+}
 
 .info{
     text-align: center;
-    line-height: 0.3;
 }
 .parraf{
     padding-bottom: 40px;
+    line-height: 80%;
+}
+
+.contenedor1 p{
+    font-size: 1rem;
 }
 
 .short-div-div{
-    height: 50%;
+    height: 48%;
+    margin-bottom: 2%;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .short-div{
@@ -26,3 +54,22 @@
     display: relative;
     float: none;
 }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    filter: invert(100%);
+}
+
+.carousel-indicators {
+    filter: invert(100%);
+}
+
+#carouselExampleIndicators{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

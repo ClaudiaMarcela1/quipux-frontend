@@ -1,69 +1,106 @@
-<div style="background-color: #E9ECEF">
+<div class="container-fluid">
 
-    <div class="container" style="padding-top: 30px;">
-        <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="background-color: white">
-                <br>
-                <p><b>INFORMACIÓN DEL CONTACTO</b></p><br>
-                <div class="info">
-                    <div class="parraf">
-                        <p><b>Dirección</b></p>
-                        <p>{{ubicacionDir}}</p>
-                        <p>{{ubicacionCity}}</p>
-                    </div>
-                    <div class="parraf">
-                        <p><b>Correo electrónico</b></p>
-                        <p>{{correoElectronico}}</p>
-                    </div>
-                    <div class="parraf">
-                        <p><b>Sitio Web</b></p>
-                        <p style="color: #00BBF9;">{{sitioWeb}}</p>
-                    </div>
-                    <div class="parraf">
-                        <p><b>Red Social</b></p>
-                        <p style="color: #00BBF9;">{{redInst}}</p>
-                        <p style="color: #00BBF9;">{{redLink}}</p>
-                    </div>
-                    <div class="parraf">
-                        <p><b>Dirección de correspondencia de correo</b></p>
-                        <p>{{correspondenciaDir}}</p>
-                        <p>{{correspondenciaCity}}</p>
-                    </div>
-                    <div class="parraf">
-                        <p><b>Números de teléfonos</b></p>
-                        <p>Fijo</p>
-                        <p>{{telefonoFijo}}</p><br><br>
-                        <p>Celular</p>
-                        <p>{{telefonoCel}}</p>
+    <div class="row">
+
+        <div class="contenedor_nuevo">
+            <app-sidebar></app-sidebar>
+        </div>
+
+        <div class="contenedor1" style="padding-top: 30px">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="background-color: white">
+                    <br>
+                    <p style="padding-left: 20px"><b>INFORMACIÓN DEL CONTACTO</b></p><br>
+                    <div class="info">
+                        <div class="parraf">
+                            <p><b>Dirección</b></p>
+                            <p>{{ubicacionDir}}</p>
+                            <p>{{ubicacionCity}}</p>
+                        </div>
+                        <div class="parraf">
+                            <p><b>Correo electrónico</b></p>
+                            <p>{{correoElectronico}}</p>
+                        </div>
+                        <div class="parraf">
+                            <p><b>Sitio Web</b></p>
+                            <p style="color: #00BBF9;">{{sitioWeb}}</p>
+                        </div>
+                        <div class="parraf">
+                            <p><b>Red Social</b></p>
+                            <p style="color: #00BBF9;">{{redInst}}</p>
+                            <p style="color: #00BBF9;">{{redLink}}</p>
+                        </div>
+                        <div class="parraf">
+                            <p><b>Dirección de correspondencia de correo</b></p>
+                            <p>{{correspondenciaDir}}</p>
+                            <p>{{correspondenciaCity}}</p>
+                        </div>
+                        <div class="parraf">
+                            <p><b>Números de teléfonos</b></p>
+                            <p>Fijo</p>
+                            <p>{{telefonoFijo}}</p><br><br>
+                            <p>Celular</p>
+                            <p>{{telefonoCel}}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-                <div class="short-div-div" style="background-color:green">
-                    CAROUSEL
-                </div>
-
-                <div class="short-div" style="background-color:white">
-
-                    <nav class="container vertical-scrollable">
-                        <div class="row text-center">
-                            
-                            <div *ngFor="let articulo of articulos" class="col-sm-3">
-                                <div class="card" style="align-items: center; border: none;">
-                                    <img src="{{articulo.imagen}}" class="rounded-circle" width="50%">
-                                    <div class="card-body">
-                                        <h5 class="card-title" style="font-size: 12px">{{articulo.titulo}}</h5>
-                                        <p class="card-text" style="font-size: 10px;">{{articulo.descripcion}}</p>
+    
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                    <div class="short-div-div" style="background-color:white">
+    
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../../../assets/img/img.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../../../assets/img/img.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../../../assets/img/img.png" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="short-div" style="background-color:white">
+    
+                        <nav class="container vertical-scrollable">
+                            <div class="row text-center">
+                                
+                                <div *ngFor="let articulo of articulos" class="col-sm-3">
+                                    <div class="card" style="align-items: center; border: none;">
+                                        <img src="{{articulo.imagen}}" class="rounded-circle" width="50%">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="font-size: 12px">{{articulo.titulo}}</h5>
+                                            <p class="card-text" style="font-size: 10px;">{{articulo.descripcion}}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </nav> 
+                        </nav> 
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
+
+    
 </div>
 
 

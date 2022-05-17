@@ -1,0 +1,44 @@
+.container-fluid{
+    background-color: #f8f9fa;
+}
+
+.contenedor_izquierdo{
+    width: 10%;
+    float: left;
+    z-index: 1;
+}
+
+.contenedor_derecho{
+    
+    width: 88%;
+    float: right;
+}
+
+.contenedor_derecho p{
+    font-size: 1rem;
+}
+
+.info{
+    text-align: center;
+}
+
+.parraf{
+    padding-bottom: 40px;
+    line-height: 40%;
+}
+
+.info2{
+    padding-top: 40px;
+    text-align: center;
+    column-count:2;
+    column-gap:10px;
+    column-rule:1px solid gray;
+}
+
+.parraf2{
+    line-height: 80%;
+    padding-bottom: 55px;
+}
+
+
+
