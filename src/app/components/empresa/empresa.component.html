@@ -2,6 +2,27 @@
 
     <div class="row">
 
+        <div class="header">
+            <ul>
+                <nav class="menu" aria-label="breadcrumb" style="float: left; padding-left: 60px;">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a routerLink="/"><i class='bx bx-home-alt'></i></a></li>
+                      <li class="breadcrumb-item">EMPRESAS</li>
+                      <li class="breadcrumb-item" aria-current="page">NOMBRE EMPRESA</li>
+                    </ol>
+                </nav>
+        
+                <li clase="usuario" style="float: right; margin-right: 5px; font-size: 25px;">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                          usuario apellido
+                        </button>
+                    </div>
+                </li>
+                <li class="img-usuario" style="float: right; font-size: 25px;"><i class='bx bxs-user-circle' id="user"></i></li> <!--Enrutar hacia la página de login-->
+            </ul>
+        </div>
+
         <div class="contenedor_izquierdo">
             <app-sidebar></app-sidebar>
         </div>
@@ -74,7 +95,7 @@
                         <div class="parraf2">
                             <p><b>Números de teléfonos</b></p>
                             <p>Fijo</p>
-                            <p>{{telefonoFijo}}</p><br><br>
+                            <p>{{telefonoFijo}}</p>
                             <p>Celular</p>
                             <p>{{telefonoCel}}</p>
                         </div>
