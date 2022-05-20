@@ -13,10 +13,10 @@ _The frontend was developed with TypeScript with an object-oriented programming 
 
 
 
-## Run 🚀
+## Run locally 🚀
 
 * Install: npm
-* Execute: npm run start
+* Execute: npm run start-dev
 * Port: 4200
 
 
